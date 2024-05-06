@@ -23,10 +23,10 @@ public class ResponseService {
 
         // Here you can implement your business logic to generate a response
         String reply_message;
-    if(message_body.contains("Hello javrvis")){
+    if(message_body.contains("Hello system")){
             reply_message = "Hello Boss";
         }else {
-            reply_message = "This is a response from the Spring Boot backend. Mohit is the king";
+            reply_message = "This is a response from the Spring Boot backend.";
         }
 
         // Create a response object
