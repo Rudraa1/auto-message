@@ -12,12 +12,10 @@ public class Customers {
 
     @Id
     private Long custId;
-
     private String customerName;
-
     private String companyName;
-
     private String customerEmail;
-
     private String customerPhone;
+//    private boolean isSpecialCustomer;
+//    private boolean isDeleted;
 }

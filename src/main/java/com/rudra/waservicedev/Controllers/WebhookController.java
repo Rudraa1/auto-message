@@ -45,7 +45,7 @@ public class WebhookController {
 
     @PostMapping("/getOrders")
     public WebhookResponse getAllOrders() {
-        List<Order> orders = orderService.getAllOrders();
+        WebhookResponse orders = orderService.getAllOrders();
 
         WebhookResponse response = new WebhookResponse();
         // Convert the list of orders to JSON string using Jackson ObjectMapper
@@ -62,10 +62,10 @@ public class WebhookController {
     }
 
 
-    @PostMapping("/create")
-    public Order createOrder(@RequestBody Order order) {
-        return orderService.createOrder(order);
-    }
+//    @PostMapping("/create")
+//    public WebhookResponse createOrder(@RequestBody Order order) {
+//        return orderService.createOrder(order);
+//    }
 
     @PostMapping("/msg")
     public WebhookResponse msg(){
